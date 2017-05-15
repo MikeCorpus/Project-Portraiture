@@ -1,0 +1,6 @@
+framework module Pods_Project_Portraiture {
+  umbrella header "Pods-Project Portraiture-umbrella.h"
+
+  export *
+  module * { export * }
+}
