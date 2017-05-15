@@ -140,6 +140,9 @@
                                 <rect key="frame" x="137" y="222" width="102" height="26"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                 <state key="normal" title="Tap to select photo"/>
+                                <connections>
+                                    <action selector="selectPhoto:" destination="jy4-u8-eVl" eventType="touchUpInside" id="F6B-rN-cVV"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Full name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pUz-KB-AhB">
                                 <rect key="frame" x="39" y="276" width="297.5" height="30"/>
@@ -175,6 +178,9 @@
                                 <state key="normal" title="Register">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="register:" destination="jy4-u8-eVl" eventType="touchUpInside" id="eqU-NZ-lE9"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -204,6 +210,12 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Title" id="ITW-Gw-w0e"/>
+                    <connections>
+                        <outlet property="confirmPasswordTextField" destination="dco-ce-ora" id="P02-Xm-tCL"/>
+                        <outlet property="emailTextField" destination="5Xw-0X-6cu" id="zT5-Oe-l0I"/>
+                        <outlet property="fullnameTextField" destination="pUz-KB-AhB" id="auF-Gu-vK7"/>
+                        <outlet property="passwordTextField" destination="Nme-qG-MZL" id="CV4-wZ-VUH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zMD-LQ-cHi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -255,6 +267,9 @@
                                 <state key="normal" title="Login">
                                     <color key="titleColor" red="0.9999127984046936" green="1" blue="0.99988144636154175" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="login:" destination="4gw-h1-uRx" eventType="touchUpInside" id="au9-Bp-T4g"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xxC-kS-DeF">
                                 <rect key="frame" x="119" y="446" width="138" height="30"/>
@@ -284,6 +299,8 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="emailTextField" destination="9Og-2T-Otm" id="3hl-m4-sGL"/>
+                        <outlet property="passwordTextField" destination="B4J-I7-0Rb" id="i3j-gB-9ZY"/>
                         <segue destination="jy4-u8-eVl" kind="show" identifier="signup2" id="mTx-mR-Etn"/>
                     </connections>
                 </viewController>

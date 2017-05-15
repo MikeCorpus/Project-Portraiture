@@ -10,6 +10,13 @@ import UIKit
 
 class SignInViewController: UIViewController {
 
+    @IBOutlet weak var emailTextField: UITextField!
+    @IBOutlet weak var passwordTextField: UITextField!
+    
+    @IBAction func login(_ sender: Any) {
+    }
+    
+    
     @IBAction func CreateNewAccount(_ sender: Any) {
         performSegue(withIdentifier: "signup2", sender: self)
     }
